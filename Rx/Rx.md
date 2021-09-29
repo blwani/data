@@ -51,7 +51,9 @@
     - 생산자는 더 이상 가능한 데이터가 없다는 사실을 onCompleted()로 알릴 수 있다.
     - 생산자는 에러가 발생했음을 onError()로 알릴 수 있다.
     - Rx자바의 옵저버블은 중첩 방식에서 벗어나 개발자를 콜백 지옥에서 구한다.
+
+
 |패턴|단일반환값|복수반환값|
 |------|---|---|
-|동기|T getData()|Iterable<T> getData()|
-|비동기|Future<T> getData()|Observable<T> getData()|
+|동기|T getData()|Iterable T getData()|
+|비동기|Future T getData()|Observable T getData()|
